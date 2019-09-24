@@ -2,9 +2,12 @@
 
 const ui = require('./ui')
 
-
 const onGetBooks = function (event) {
-  api.getWords()
-    .then(ui.getWordsSuccess)
-    .catch(ui.getWordsFailure)
+  api.getBooks()
+    .then(ui.getBooksSuccess)
+    .catch(ui.getBooksFailure)
+}
+
+module.exports = {
+  onGetBooks
 }

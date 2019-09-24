@@ -14,3 +14,8 @@ const getBooksSuccess = function (data) {
 const getBooksFailure = function () {
   $('#content').text('something\'s gone wrong')
 }
+
+module.exports = {
+  getBooksSuccess,
+  getBooksFailure
+}
